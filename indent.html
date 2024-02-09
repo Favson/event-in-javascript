@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+</style>
+<body>
+    <button id="changeColor">Change color</button>
+    <input type="text" id="inputname" placeholder="Input Your Name" value="Favour Adebisi">
+    <div class="display"></div>
+
+    <script>
+        const buttonChamgeColor = document.getElementById('changeColor')
+
+        buttonChamgeColor.addEventListener('click', ()=>{
+            let RN1 =Math.round(Math.random()*255)
+            let RN2 =Math.round(Math.random()*255)
+            let RN3 =Math.round(Math.random()*255)
+
+            document.body.style.backgroundColor =`rgb(${RN1}, ${RN2}, ${RN3})`
+        })
+
+        const inputName = document.getElementById('inputname')
+        inputName.addEventListener('keyup', (index)=>{
+            console.log(index.target.value)
+            display.innerHTML = index.target.value
+        })
+    </script>
+</body>
+</html>

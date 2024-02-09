@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event in Js</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <!-- <script src="script.js" defer></script> -->
+
+    <style>
+
+    </style>
+</head>
+<body>
+    <button id="button">Change Colour</button>
+    <input type="text" id="inp" value="Favour Adebisi" placeholder="input Name">
+    <button id="Send">Send</button>
+    <div id="response"></div>
+
+</body>
+<script>
+
+
+
+
+//    const button = document.getElementById('button')
+    //button.addEventListener("click", (e)=>{
+      //  let randomColorFirst =Math.round(Math.random()*255)
+        //let randomColorSecond = Math.round(Math.random()*255)
+        //let randomColorThird = Math.round(Math.random()*255)
+        //document.body.style.backgroundColor =`rgb(${randomColorFirst}, ${randomColorSecond}, ${randomColorThird})`
+
+
+       // console.log(e.target)//the e.target show the elment triggering the event 
+    //})
+
+    const sendButton = document.getElementById('Send')
+    sendButton.addEventListener('click', ()=>{
+        //inputText()
+        
+    })
+    
+    const inputText = document.getElementById('inp')
+    inputText.addEventListener('keyup', (e)=>{
+        console.log(e.target.value);
+        const responseReceived = document.getElementById('response')
+        responseReceived.innerHTML = e.target.value
+    })
+    
+    
+</script>
+
+</html>

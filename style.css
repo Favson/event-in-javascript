@@ -1,0 +1,19 @@
+#progress{
+    height: 20px;
+    background-color:aliceblue;
+}
+
+#progress-fill{
+    background-color: green;
+    width: 0%;
+    border-radius: 10px ;
+    height: 20px;
+    transition: .5s ;
+}
+
+#percentage{
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 2%;
+}
